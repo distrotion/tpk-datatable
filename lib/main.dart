@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:set_table_data/style/style.dart';
+import 'package:set_table_data/tabletap1/tablestruc1.dart';
 
 import 'bloc/BlocPageRebuild.dart';
-import 'table/tabletap1.dart';
 
 void main() {
   runApp(MyApp());
@@ -40,7 +41,18 @@ class MainStructure extends StatelessWidget {
         body: Center(
             child: Container(
       // width: double.infinity,
-      child: DataListTable(),
+      decoration: BoxDecoration(
+        color: CustomTheme.colorGreyBg,
+        borderRadius: BorderRadius.all(Radius.circular(24)),
+        boxShadow: [
+          BoxShadow(
+              color: CustomTheme.colorShadowBgStrong,
+              offset: Offset(0, 0),
+              blurRadius: 10,
+              spreadRadius: 0)
+        ],
+      ),
+      child: TableTap1Struc(),
     )));
   }
 }
