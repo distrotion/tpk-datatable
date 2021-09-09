@@ -23,7 +23,7 @@ class _DataListTableState extends State<DataListTable> {
     //BlocPatientList blocPatientList = BlocProvider.of<BlocPatientList>(context);
     //List<PatientTableModel> patientListdata_Clone = blocPatientList.state.patientTableData;
 
-    List<MainStrucTable> Listdata_Clone = State_DataList.rListData;
+    List<MainStrucTable> Listdata_Clone = rListData;
 
     double nDataColumnWidth = 100;
     double nDataColumnWidthIcon = 100;

@@ -60,14 +60,15 @@ class BottomPageNum extends StatelessWidget {
 
     //print("build BottomPageNum " + BlocPatientList.state.patientTableData.length.toString());
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
+        SizedBox(width: 50),
         Text(
           "Pages",
           style: TxtStyle(fontSize: 12),
         ),
         ComPageNumBtnGroup(
-          nItemNum: State_DataList.rListData.length,
+          nItemNum: rListData.length,
           nPageSelects: TableTap1nPage,
           func: func,
         )
