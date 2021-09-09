@@ -1,7 +1,7 @@
 import '../modelintable.dart';
 
 int TableTap1nPage = 1;
-List<MainStrucTable> rListData = [
+List<MainStrucTable> rListDataTableTap1 = [
   MainStrucTable(
       number: "001",
       field01: "01",

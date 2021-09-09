@@ -68,7 +68,7 @@ class BottomPageNum extends StatelessWidget {
           style: TxtStyle(fontSize: 12),
         ),
         ComPageNumBtnGroup(
-          nItemNum: rListData.length,
+          nItemNum: rListDataTableTap1.length,
           nPageSelects: TableTap1nPage,
           func: func,
         )
